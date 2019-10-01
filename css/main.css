@@ -1,4 +1,4 @@
-@import url('https://fontsgoogleapis.com/css?family=Roboto:400,700')
+@import url('https://fontsgoogleapis.com/css?family=Roboto:400,700');
 
 :root {
     --mainBlue:#40acf1;
@@ -28,7 +28,7 @@ body {
     outline-color: var(--mainBlue)!important;
 }
 .nav-link {
-    /* color: var(--mainBlack); */
+    color: var(--mainBlack);
     text-transform: capitalize;
 }
 .nav-link:hover{
@@ -45,3 +45,59 @@ body {
 .nav-icon:hover{
     color: var(--mainBlack);
 }
+
+/* header */
+.header {
+    color:var(--mainWhite);
+    clip-path: polygon(0 0,100% 0,100% 95%, 50% 100%,0 95%);
+    overflow: hidden;
+}
+.height-max{
+    min-height: calc(100vh - 76px);
+    background: url(../img/headerBcg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite
+
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) translate(-5%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.title-heading {
+    background:rgba(0,0,0,0.4);
+    border-left: 0.3rem solid var(--mainBlue);
+
+}
+.title {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+@media screen and (min-width:768px){
+    .title {
+        font-size: 3rem;
+    }
+}
+.title-icon {
+color: var(--mainBlue);
+text-decoration: none!important;
+}
+title-icon:hover {
+    /* color: var(--mainBlue); */
+    background:rgba(0,0,0,0.4);
+}
+
+
+
