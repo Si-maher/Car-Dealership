@@ -14,3 +14,34 @@ body {
     color: var(--mainBlack);
     background: var(--mainWhite)
 }
+
+/* navbar */
+
+.navbar {
+    background: var(--mainWhite);
+}
+.navbar-icon {
+    font-size: 2rem;
+    color: var(--mainBlue);
+}
+.navbar-toggler {
+    outline-color: var(--mainBlue)!important;
+}
+.nav-link {
+    /* color: var(--mainBlack); */
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    color: var(--mainBlue);
+}
+.nav-icon {
+    font-size: 1.5rem;
+    color: var(--mainBlue);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.nav-icon:hover{
+    color: var(--mainBlack);
+}
