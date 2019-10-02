@@ -33,7 +33,7 @@ body {
     background: var(--mainWhite);
     z-index: 999;
 }
-.hidePrelaoder {
+.hidePreloader {
     display: none!important;
 }
 /* navbar */
