@@ -6,13 +6,22 @@
     --mainBlack:#292f36;
     --mainGrey:rgb(216,214,214);
     --mainYellow: #e3b505;
-    --transparentBlue:rgba(64,172,241,0.7)
+    --transparentBlue:rgba(64,172,241,0.6)
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--mainBlack);
     background: var(--mainWhite)
+}
+
+/* section title  */
+
+.section-title-special {
+    background: var(--transparentBlue);
+    color: var(--mainWhite);
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
 /* navbar */
@@ -91,7 +100,7 @@ body {
     }
 }
 .title-icon {
-color: var(--mainBlue);
+color: var(--transparentBlue);
 text-decoration: none!important;
 }
 title-icon:hover {
