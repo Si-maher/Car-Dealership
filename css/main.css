@@ -95,7 +95,7 @@ color: var(--mainBlue);
 text-decoration: none!important;
 }
 title-icon:hover {
-    /* color: var(--mainBlue); */
+    color: var(--mainBlue);
     background:rgba(0,0,0,0.4);
 }
 
