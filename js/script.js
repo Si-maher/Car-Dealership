@@ -38,9 +38,19 @@ const produceCars = () => {
     makeCar('chevy', 'amercian','img/car-american-4.jpeg');
     makeCar('chevy', 'amercian','img/car-american-5.jpeg');
 }
-
-
-
-
-
+const SpecialCars = cars.filter(car => car.special === true)
+return (
+    cars,
+    SpecialCars
+)
 })();
+
+
+const FeaturedCars = ((CreateCars)=>{
+const SpecialCars = CreateCars.SpecialCars
+const info = document.querySelector('.featured-info');
+document.addEventListener('DOMContentLoaded', ()=> {
+    info.innerHTML='';
+})
+})(CreateCars)
+
