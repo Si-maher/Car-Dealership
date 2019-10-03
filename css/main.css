@@ -187,3 +187,27 @@ title-icon:hover {
 .question-info {
     color: var(--mainWhite)
 }
+
+/* featured section  */
+
+.featured {
+    background: var(--mainGrey);
+}
+.featured-item {
+background: var(--mainWhite);
+border-radius: 0.5rem;
+opacity: 0.5;
+cursor: pointer;
+transition: all 0.5s ease-in-out;
+}
+.featured-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    color: var(--mainWhite);
+    background: var(--mainBlue)
+}
+.featured-icon {
+    font-size: 1.5rem;
+    color: var(--mainYellow);
+
+}
