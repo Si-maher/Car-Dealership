@@ -101,21 +101,21 @@ const DisplayCars = ((CreateCars) => {
                     <div class="car-info d-flex justify-content-between">
                         <!-- first flex child  -->
                         <div class="car-test text-uppercase">
-                            <h6 class="font-weight-bold">make</h6>
-                            <h6>model</h6>
+                            <h6 class="font-weight-bold">${car.make}</h6>
+                            <h6>${car.model}</h6>
                         </div>
                         <!-- second flex child  -->
                         <h5 class="car-value align-self-center py-2 px-3">€
-                            <span class="car-price">'10,000'</span>
+                            <span class="car-price">${car.price}</span>
                         </h5>
                     </div>
                 </div>
                 <!-- end of card body  -->
                 <!-- card footer  -->
                 <div class="card-footer text-capitalize d-flex justify-content-between">
-                    <p><span><i class="fas fa-car"></i></span> mercedes</p>
-                    <p> <span> <i class="fas fa-cogs"></i></span> automatic</p>
-                    <p><span><i class="fas fa-gas-pump"></i></span> 50</p>
+                    <p><span><i class="fas fa-car"></i></span> ${car.type}</p>
+                    <p> <span> <i class="fas fa-cogs"></i></span> ${car.trans}</p>
+                    <p><span><i class="fas fa-gas-pump"></i></span> ${car.gas}</p>
                 </div>
                 <!-- end of card footer  -->
             </div>
