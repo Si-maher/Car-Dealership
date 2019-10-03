@@ -19,6 +19,14 @@ const CreateCars = (() => {
             this.gas = gas ;
         }
     }
+const makeCar =(make, country, img='img/car-default.jpeg', special=true,model='new model', price=10000, type='sedan',trans='automatic', gas='50')=> {
+    const car = new Car(make,country,img,special,model,price,type,trans,gas);
+    cars.push(car)
+}
 
-    
+
+
+
+
+
 })();
