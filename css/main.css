@@ -160,3 +160,30 @@ title-icon:hover {
     color: var(--mainYellow);
     cursor: pointer;
 }
+/* question  */
+
+.question {
+    background: url(../img/questionBcg.jpeg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+.question-grey {
+    background: rgba(79,109,122,0.75)
+}
+.question-yellow {
+    background: rgba(227,181,5,0.75)
+}
+.question-icon {
+    font-size: 3rem;
+    color: var(--mainBlue);
+    transition: all 0.5s ease-in-out;
+}
+.question-icon:hover {
+    color: var(--mainBlue);
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+.question-info {
+    color: var(--mainWhite)
+}
