@@ -84,3 +84,45 @@ info.addEventListener('click', (event) => {
 })
 })(CreateCars)
 
+const DisplayCars = ((CreateCars) => {
+    const cars = CreateCars.cars;
+    const inventory = document.querySelector('.inventory-container')
+    document.addEventListener('DOMContentLoaded', ()=> {
+        inventory.innerHTML =''
+
+        let output= '';
+        cars.forEach((car) => {
+            output += `
+            <div class="col-10 mx-auto my-3 col-md-6 col-lg-4 single-car${car.country}">
+            <div class="card car-card">
+                <img src="${car.img}" class ="card-img-top car-img"alt="german car">
+                <!-- card body  -->
+                <div class="card-body">
+                    <div class="car-info d-flex justify-content-between">
+                        <!-- first flex child  -->
+                        <div class="car-test text-uppercase">
+                            <h6 class="font-weight-bold">make</h6>
+                            <h6>model</h6>
+                        </div>
+                        <!-- second flex child  -->
+                        <h5 class="car-value align-self-center py-2 px-3">€
+                            <span class="car-price">'10,000'</span>
+                        </h5>
+                    </div>
+                </div>
+                <!-- end of card body  -->
+                <!-- card footer  -->
+                <div class="card-footer text-capitalize d-flex justify-content-between">
+                    <p><span><i class="fas fa-car"></i></span> mercedes</p>
+                    <p> <span> <i class="fas fa-cogs"></i></span> automatic</p>
+                    <p><span><i class="fas fa-gas-pump"></i></span> 50</p>
+                </div>
+                <!-- end of card footer  -->
+            </div>
+        </div>
+            
+            `
+        })
+        inventory.innerHTML = output
+    })
+})(CreateCars)
