@@ -137,4 +137,26 @@ title-icon:hover {
     background: var(--mainBlue);
     margin: 1rem auto;
 }
+/* inventory  */
 
+
+.inventory {
+    background: var(--mainGrey);
+}
+.car-card {
+    border-radius: 0!important;
+}
+.car-img {
+    border-top-left-radius:0; 
+    border-top-right-radius:0; 
+}
+.car-value {
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+
+}
+.car-value:hover {
+    color: var(--mainYellow);
+    cursor: pointer;
+}
