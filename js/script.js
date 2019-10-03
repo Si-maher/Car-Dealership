@@ -23,7 +23,21 @@ const makeCar =(make, country, img='img/car-default.jpeg', special=true,model='n
     const car = new Car(make,country,img,special,model,price,type,trans,gas);
     cars.push(car)
 }
+// produce cars 
 
+const produceCars = () => {
+    makeCar('chevy','american');
+    makeCar('mercedes', 'german', 'img/car-german-1.jpeg', true);
+    makeCar('mercedes', 'german', 'img/car-german-2.jpeg');
+    makeCar('mercedes', 'german', 'img/car-german-3.jpeg',false,'some model');
+    makeCar('mercedes', 'german', 'img/car-german-4.jpeg', undefined,'other model');
+    makeCar('mercedes', 'german', 'img/car-german-5.jpeg', true);
+    makeCar('chevy', 'amercian','img/car-american-1.jpeg');
+    makeCar('chevy', 'amercian','img/car-american-2.jpeg',false);
+    makeCar('chevy', 'amercian','img/car-american-3.jpeg');
+    makeCar('chevy', 'amercian','img/car-american-4.jpeg');
+    makeCar('chevy', 'amercian','img/car-american-5.jpeg');
+}
 
 
 
