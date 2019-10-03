@@ -211,3 +211,46 @@ transition: all 0.5s ease-in-out;
     color: var(--mainYellow);
 
 }
+.img-container {
+    background: var(--mainBlue);
+    position: relative;
+    overflow: hidden;
+}
+.featured-photo{
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .featured-photo {
+transform: scale(1.1);
+opacity: 0.5;
+}
+.featured-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 1s ease-in-out
+
+}
+.featured-link:hover {
+    color: var(--mainBlack);
+    
+}
+.img-container:hover .featured-link {
+    opacity: 1;
+}
+
+/* footer  */
+
+.footer {
+    background: var(--mainBlack);
+}
+.footer-icon {
+    font-size: 1.5rem;
+    
+    color: var(--mainYellow);
+    transition: all 0.5s ease-in-out;
+}
+.footer-icon:hover {
+    color: var(--mainBlue);
+}
