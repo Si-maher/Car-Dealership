@@ -2,7 +2,7 @@
 
 This app was created using vanilla Javascript, CSS, Bootstrap and HTML. Javascript is used to create filter methods for different car models and renders the results. 
 
-# [DEMO](https://app.netlify.com/sites/simons-car-dealership/settings/general)
+# [DEMO](https://simons-car-dealership.netlify.com/)
 # Preview
 
 ![Car dealership -Preview](./car-dealership.PNG)
