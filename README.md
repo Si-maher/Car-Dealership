@@ -7,6 +7,12 @@ This app was created using vanilla Javascript, CSS, Bootstrap and HTML. Javascri
 
 ![Car dealership -Preview](./car-dealership.PNG)
 
+# Technologies
+*HTML
+*CSS
+*JavaScript
+*Bootstrap
+
 # Author
 
 Simon Maher
