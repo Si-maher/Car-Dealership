@@ -32,11 +32,11 @@ function produceCars() {
     makeCar('bmw', 'german', 'img/car-german-3.jpeg',false,'some model');
     makeCar('bmw', 'german', 'img/car-german-4.jpeg', undefined,'other model');
     makeCar('mercedes', 'german', 'img/car-german-5.jpeg', false);
-    makeCar('chevy', 'amercian','img/car-american-1.jpeg');
-    makeCar('chevy', 'amercian','img/car-american-2.jpeg',false);
-    makeCar('chevy', 'amercian','img/car-american-3.jpeg',false);
-    makeCar('chevy', 'amercian','img/car-american-4.jpeg',false);
-    makeCar('chevy', 'amercian','img/car-american-5.jpeg',false);
+    makeCar('chevy', 'american','img/car-american-1.jpeg');
+    makeCar('chevy', 'american','img/car-american-2.jpeg',false);
+    makeCar('chevy', 'american','img/car-american-3.jpeg',false);
+    makeCar('chevy', 'american','img/car-american-4.jpeg',false);
+    makeCar('chevy', 'american','img/car-american-5.jpeg',false);
 }
 produceCars()
 console.log(cars)
@@ -93,7 +93,7 @@ const DisplayCars = ((CreateCars) => {
         let output= '';
         cars.forEach((car) => {
             output += `
-            <div class="col-10 mx-auto my-3 col-md-6 col-lg-4 single-car${car.country}">
+            <div class="col-10 mx-auto my-3 col-md-6 col-lg-4  single-car ${car.country}">
             <div class="card car-card">
                 <img src="${car.img}" class ="card-img-top car-img"alt="german car">
                 <!-- card body  -->
@@ -126,3 +126,25 @@ const DisplayCars = ((CreateCars) => {
         inventory.innerHTML = output
     })
 })(CreateCars)
+
+// filter cars 
+
+const FilterCar = (() => {
+const filterButtons = document.querySelectorAll('.filter-btn')
+filterButtons.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+        const value = event.target.dataset.filter;
+        const singleCar = document.querySelectorAll('.single-car')
+        console.log(singleCar)
+       singleCar.forEach((car) => {
+           if(value === 'all') {
+             car.style.display = 'block'  
+           }
+           else {
+               (!car.classList.contains(value))?
+               car.style.display = 'none': car.style.display = 'block'
+           }
+       }) 
+    })
+})
+})()
